@@ -59,14 +59,14 @@ img {
   padding: 0 15px;
 }
 .phonesvg {
-  fill: var(--text-color-grey);
   margin-right: 10px;
   align-items: center;
+  fill: currentColor;
 }
 
 .phonesvg:hover,
 .phonesvg:focus {
-  fill: var(--blue-light-color);
+  fill: currentColor;
   transition: var(--transition);
 }
 
@@ -129,7 +129,7 @@ img {
 .phone-color:hover,
 .phone-color:focus {
   color: var(--text-color-lightblue);
-  fill: var(--text-color-lightblue);
+  fill: currentColor;
 }
 
 .links {
@@ -164,6 +164,7 @@ img {
 .links:hover,
 .links:focus {
   color: var(--text-color-lightblue);
+  fill: currentColor;
 }
 
 /* footer */
