@@ -48,7 +48,9 @@ nav .links.current {
   display: block;
 }
 
-img {
+img,
+a,
+svg {
   display: block;
 }
 
@@ -548,6 +550,13 @@ img {
   text-decoration: none;
   color: var(--text-color-dark);
 }
+.lidecor:hover .moving,
+.lidecor:focus .moving {
+  transform: translateY(0);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .flex-links {
   display: flex;
   flex-wrap: wrap;
@@ -560,6 +569,7 @@ img {
   text-align: left;
   transition: var(--transition);
 }
+
 .flex-links-element:hover,
 .flex-links-element:focus {
   background: var(--main-background-color);
@@ -567,6 +577,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .flex-links-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -593,10 +604,7 @@ img {
   transform: translateY(100%);
   transition: transform 250ms linear;
 }
-.lidecor:hover .moving,
-.lidecor:focus .moving {
-  transform: translateY(0);
-}
+
 .moving-text {
   font-size: 18px;
   line-height: 28px;
