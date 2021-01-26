@@ -432,8 +432,6 @@ img {
   margin-bottom: 16px;
 }
 .name-ocupation {
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -472,13 +470,16 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   fill: var(--text-ikons-grey);
+  transition: var(--transition);
 }
 .link-space {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
 }
 .link-space:last-child {
   margin-right: 0;
