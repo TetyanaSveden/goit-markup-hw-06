@@ -557,9 +557,7 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-right: 1px solid var(--line-color);
-  border-left: 1px solid var(--line-color);
-  border-bottom: 1px solid var(--line-color);
+  outline: 1px solid var(--line-color);
   text-align: left;
   transition: var(--transition);
 }
