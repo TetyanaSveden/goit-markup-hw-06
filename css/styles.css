@@ -64,6 +64,7 @@ svg {
   margin-right: 10px;
   align-items: center;
   fill: currentColor;
+  transition-property: fill;
 }
 
 .phonesvg:hover,
@@ -127,11 +128,14 @@ svg {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: var(--transition);
+  transition-property: color, fill;
 }
 .phone-color:hover,
 .phone-color:focus {
   color: var(--text-color-lightblue);
   fill: currentColor;
+  transition: var(--transition);
 }
 
 .links {
@@ -143,6 +147,8 @@ svg {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: var(--transition);
+  transition-property: opasity, fill, color;
 }
 .links::after {
   content: "";
@@ -161,12 +167,13 @@ svg {
 .current.links::after,
 .links:hover::after {
   opacity: 1;
+  transition: var(--transition);
 }
-
 .links:hover,
 .links:focus {
   color: var(--text-color-lightblue);
   fill: currentColor;
+  transition: var(--transition);
 }
 
 /* footer */
@@ -205,16 +212,21 @@ svg {
 .footer-phone {
   text-decoration: none;
   color: var(--text-color-grey-through);
+  transition: var(--transition);
+  transition-property: color;
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--text-color-lightblue);
+  transition: var(--transition);
+  transition-property: color;
 }
 
 .footer-phone:hover,
 .footer-phone:focus {
   color: var(--text-color-lightblue);
+  transition: var(--transition);
 }
 
 .footer-contakt {
@@ -242,14 +254,28 @@ svg {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+  transition: var(--transition);
+  transition-property: background-color;
 }
 
 .footer-link-flow:hover,
-.footer-link-flow:focus {
+.footerlinks:focus {
   background-color: var(--blue-light-color);
+  transition: var(--transition);
 }
 .footer-link-flow:last-child {
   margin-right: 0;
+}
+.footerlinks {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+  transition-property: background-color;
 }
 
 .footer-position {
@@ -455,11 +481,14 @@ svg {
 }
 .ikonssvg {
   color: var(--main-background-color);
+  transition: var(--transition);
+  transition-property: fill, color;
 }
 .ikonssvg:hover,
 .ikonssvg:focus {
   color: var(--main-background-color);
   fill: var(--main-background-color);
+  transition: var(--transition);
 }
 .foot-ikonssvg {
   fill: var(--main-background-color);
@@ -474,6 +503,7 @@ svg {
   border-radius: 50%;
   fill: var(--text-ikons-grey);
   transition: var(--transition);
+  transition-property: fill, background-color;
 }
 .link-space {
   margin-right: 10px;
@@ -487,6 +517,7 @@ svg {
 .link-flow:focus {
   fill: var(--line-color);
   background-color: var(--blue-light-color);
+  transition: var(--transition);
 }
 /*  portfolio buttons  */
 .buttons {
@@ -497,6 +528,8 @@ svg {
   cursor: pointer;
   border: none;
   padding: 6px 22px;
+  transition: var(--transition);
+  transition-property: color, box-shadow, background-color;
 }
 
 .buttons:hover,
