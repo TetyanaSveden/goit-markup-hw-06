@@ -148,7 +148,7 @@ svg {
   padding-top: 32px;
   padding-bottom: 32px;
   transition: var(--transition);
-  transition-property: opacity, fill, color;
+  transition-property: fill, color, opacity;
 }
 .links::after {
   content: "";
@@ -161,13 +161,14 @@ svg {
   height: 4px;
   border-radius: 4px;
   background-color: var(--text-color-lightblue);
-  opacity: 0;
+
   transition: var(--transition);
+  opacity: 0;
 }
 .current.links::after,
 .links:hover::after {
-  opacity: 1;
   transition: var(--transition);
+  opacity: 1;
 }
 .links:hover,
 .links:focus {
@@ -714,6 +715,6 @@ svg {
   cursor: pointer;
 }
 .is-hidden {
-  opacity: 0;
   pointer-events: none;
+  opacity: 0;
 }
