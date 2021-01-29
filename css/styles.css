@@ -588,7 +588,6 @@ svg {
 }
 .lidecor:hover,
 .lidecor:focus {
-  transition: transform 250ms linear;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -612,11 +611,11 @@ svg {
 
 .flex-links-element:hover .moving,
 .flex-links-element:focus .moving {
-  transform: translateY(0);
   box-sizing: border-box;
   transition: transform 250ms linear;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transform: translateY(0);
 }
 
 .flex-links-element:nth-child(3n) {
