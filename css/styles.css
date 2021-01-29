@@ -586,7 +586,7 @@ svg {
   transition: transform 250ms linear;
   transition: var(--transition);
   transition-property: box-shadow, background-color, transform;
-  will-change: transform;
+  /* will-change: transform;  */
 }
 .lidecor:hover,
 .lidecor:focus {
@@ -645,7 +645,7 @@ svg {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms linear;
-  will-change: transform;
+  /* will-change: transform; */
   transition-property: background-color, transform;
 }
 
