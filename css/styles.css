@@ -482,7 +482,6 @@ svg {
 }
 .ikonssvg {
   color: var(--main-background-color);
-  transition: var(--transition);
   transition-property: fill, color;
 }
 .ikonssvg:hover,
@@ -516,7 +515,7 @@ svg {
 }
 .link-flow:hover,
 .link-flow:focus {
-  fill: var(--line-color);
+  fill: var(--main-background-color);
   background-color: var(--blue-light-color);
   transition: var(--transition);
 }
@@ -707,6 +706,7 @@ svg {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--main-background-color);
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -720,7 +720,102 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.103);
   cursor: pointer;
 }
+
+.modal-close-btn:hover {
+  color: var(--text-color-lightblue);
+}
 .is-hidden {
   pointer-events: none;
   opacity: 0;
+}
+.form {
+  max-width: 100%;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var (--text-color-dark);
+  margin-bottom: 30px;
+}
+.form-filed {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-lable {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+
+.input-form {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 40px;
+}
+.input-form:focus + .form-lable,
+.input-form:not(:placeholder-shown) + .form-lable {
+  left: 0;
+  transform: translateY(-40px);
+}
+
+.form-icon {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  transform: translateY(+110%);
+  display: inline-block;
+}
+
+.form-filed:focus .input-form {
+  border: 1px solid rgba(33, 150, 243, 0.9);
+  border-radius: 4px;
+  transition: var(--transition);
+  transition-property: border-color;
+}
+
+.input-form:focus {
+  fill: var(--text-color-lightblue);
+  border: 1px solid rgba(33, 150, 243, 0.9);
+  border-radius: 4px;
+}
+.input-form:focus ~ .form-icon {
+  fill: var(--text-color-lightblue);
+}
+
+.input-comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.input-comment:focus {
+  border: 1px solid rgba(33, 150, 243, 0.9);
+  border-radius: 4px;
+  transition: var(--transition);
+  transition-property: border-color;
+  outline: none;
+}
+
+.labletext {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-color-grey);
+}
+.form-comment {
+  position: absolute;
+  top: -7%;
+  left: 0;
+  transform: translateY(-50%);
 }
