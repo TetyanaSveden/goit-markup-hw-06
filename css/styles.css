@@ -678,6 +678,8 @@ svg {
   border: 1px solid var(--text-ikons-grey);
   border-radius: 4px;
   color: var(--text-ikons-grey);
+  transition: var(--transition);
+  transition-property: color, border;
 }
 .link-size:hover,
 .link-size:focus {
