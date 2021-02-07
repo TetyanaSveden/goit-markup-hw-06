@@ -278,7 +278,6 @@ svg {
   transition: var(--transition);
   transition-property: background-color;
 }
-
 .footer-position {
   display: block;
   margin-right: 93px;
@@ -306,8 +305,29 @@ svg {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  padding-left: 12px;
+  outline: transparent;
 }
 
+.dimentions:focus {
+  border: 1px solid rgba(33, 150, 243, 0.9);
+  border-radius: 4px;
+}
+
+.form-path {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plane {
+  fill: var(--main-background-color);
+  margin-left: 10px;
+}
 /* main section */
 .main-section {
   background-position: center;
@@ -360,6 +380,7 @@ svg {
   width: 200px;
   height: 50px;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* our services */
@@ -709,6 +730,9 @@ svg {
   transform: translate(-50%, -50%);
   background-color: var(--main-background-color);
   padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-close-btn {
