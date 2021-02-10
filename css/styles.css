@@ -757,6 +757,8 @@ textarea {
   pointer-events: none;
   opacity: 0;
 }
+
+/* form */
 .form {
   max-width: 100%;
 }
@@ -854,6 +856,9 @@ textarea {
   left: 0;
   transform: translateY(-50%);
 }
+
+/* checkbox */
+
 .checkbox-flex {
   display: flex;
   margin-bottom: 30px;
