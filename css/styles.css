@@ -53,6 +53,9 @@ a,
 svg {
   display: block;
 }
+textarea {
+  resize: none;
+}
 
 /* header */
 .container {
@@ -824,6 +827,7 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 12px 16px;
 }
 .input-comment:focus {
   border: 1px solid rgba(33, 150, 243, 0.9);
@@ -832,7 +836,12 @@ svg {
   transition-property: border-color;
   outline: none;
 }
-
+.input-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .labletext {
   font-size: 12px;
   line-height: 14px;
@@ -844,4 +853,61 @@ svg {
   top: -7%;
   left: 0;
   transform: translateY(-50%);
+}
+.checkbox-flex {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: center;
+}
+.formlink {
+  color: var(--text-color-lightblue);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.lablecheckbox {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color-grey);
+  align-items: center;
+  display: inline-flex;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.checkbox {
+  display: inline-block;
+}
+.checkicon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+
+  border: 2px solid var(--text-color-black);
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition-property: background-color, border-color;
+}
+
+.checkbox:checked + .checkicon {
+  border-color: var(--text-color-lightblue);
+  background-color: #2196f3;
+  background-image: url("../images/icon-check1.svg");
+  background-size: contain;
+  background-origin: border-box;
+  transition: var(--transition);
 }
