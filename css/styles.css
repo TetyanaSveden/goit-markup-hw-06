@@ -551,6 +551,7 @@ textarea {
   color: var(--text-color-dark);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   padding: 6px 22px;
   transition: var(--transition);
   transition-property: color, box-shadow, background-color;
