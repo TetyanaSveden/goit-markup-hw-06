@@ -778,14 +778,6 @@ textarea {
   margin-bottom: 28px;
 }
 
-.form-lable {
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%);
-  transition: var(--transition);
-}
-
 .input-form {
   width: 448px;
   height: 40px;
@@ -795,10 +787,17 @@ textarea {
   outline: none;
   padding-left: 40px;
 }
-.input-form:focus + .form-lable,
-.input-form:not(:placeholder-shown) + .form-lable {
+.input-form:focus + .form-label,
+.input-form:not(:placeholder-shown) + .form-labe {
   left: 0;
   transform: translateY(-40px);
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: var(--transition);
 }
 
 .form-icon {
