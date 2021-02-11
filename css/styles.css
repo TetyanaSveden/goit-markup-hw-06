@@ -283,7 +283,7 @@ textarea {
 }
 .footer-position {
   display: block;
-  margin-right: 93px;
+  margin-right: auto;
 }
 .position-services {
   display: flex;
@@ -878,7 +878,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.lablecheckbox {
+.labelcheckbox {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
