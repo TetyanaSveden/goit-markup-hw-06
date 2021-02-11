@@ -303,6 +303,7 @@ textarea {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+  color: var(--main-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -916,4 +917,7 @@ textarea {
   background-size: contain;
   background-origin: border-box;
   transition: var(--transition);
+}
+.checkbox:focus + .checkicon {
+  border-color: var(--text-color-lightblue);
 }
